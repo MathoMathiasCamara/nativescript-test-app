@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <StackLayout class="p-4">
+        <TextField class="new-item"></TextField>
+        <Repeater items="{{ items }}">
+            <Repeater.itemTemplate>
+                <Label text = "{{ $value }}"/>
+            </Repeater.itemTemplate>
+        </Repeater>
+    </StackLayout>
+</Page>
